@@ -2,15 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { useState } from "react";
 
-function RoleDice() {
-  const [dice, setDice] = useState(1);
+function RoleDice({roleDice ,dice}) {
 
-  const roleDice = () => {
-    const randomnumber = Math.floor(Math.random() * 6+1);
-    console.log(randomnumber);
-    setDice((prev) => randomnumber);
-    console.log(dice);
-  };
+
+  
   return (
     <DiceContainer>
       <div
